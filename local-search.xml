@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>我的世界生电入门-环境篇</title>
+    <link href="/2026/06/22/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E7%94%9F%E7%94%B5%E5%85%A5%E9%97%A8/"/>
+    <url>/2026/06/22/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E7%94%9F%E7%94%B5%E5%85%A5%E9%97%A8/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>导语：原版生存打完龙没事干了？也许你应该尝试一些新东西</p></blockquote><h2 id="从零开始入门生电"><a href="#从零开始入门生电" class="headerlink" title="从零开始入门生电"></a>从零开始入门生电</h2><h4 id="什么是生电？"><a href="#什么是生电？" class="headerlink" title="什么是生电？"></a>什么是生电？</h4><p>“生”&#x3D;生存模式”survival”<br>“电”&#x3D;红石电路<br>“生电”即是在生存模式下玩红石工程</p><h4 id="生电有什么用"><a href="#生电有什么用" class="headerlink" title="生电有什么用?"></a>生电有什么用?</h4><p>简单理解，就是<strong>让资源实现”自动生产”</strong><br>例如:</p><table><thead><tr><th align="left">机器名称</th><th align="center">用途</th></tr></thead><tbody><tr><td align="left">刷石机</td><td align="center">全自动生产石料资源</td></tr><tr><td align="left">刷怪塔</td><td align="center">获取大量怪物掉落物</td></tr><tr><td align="left">熔炉组</td><td align="center">快速烧炼大量物品</td></tr></tbody></table><h4 id="是不是很难？"><a href="#是不是很难？" class="headerlink" title="是不是很难？"></a>是不是很难？</h4><p>答案是入门不难，进阶有一定难度。<br>当你入门生电，跟着教程做出你的第一台刷石机，会带来极其明显的成就感，让你更想继续下去。</p><h3 id="怎么入门生电"><a href="#怎么入门生电" class="headerlink" title="怎么入门生电?"></a>怎么入门生电?</h3><h3 id="怎么入门生电-1"><a href="#怎么入门生电-1" class="headerlink" title="怎么入门生电?"></a>怎么入门生电?</h3><h4 id="📌-前置准备"><a href="#📌-前置准备" class="headerlink" title="📌 前置准备"></a>📌 前置准备</h4><ol><li>一台能运行 Java 版《我的世界》的电脑</li><li>一个优秀的第三方启动器（推荐 PCL2 或 HMCL）</li><li>一颗富有探索精神的心</li></ol><blockquote><p>⚠️ <strong>关于版本选择：</strong> &gt; 并不推荐国际基岩版和网易版。基岩版的红石随机性太强，不适合严谨的生电工程；网易版由于机制玄学且限制较多，完全无法支撑起中后期的自动化机械。生电是 Java 版的天下。</p></blockquote><h4 id="🚀-版本与客户端推荐"><a href="#🚀-版本与客户端推荐" class="headerlink" title="🚀 版本与客户端推荐"></a>🚀 版本与客户端推荐</h4><p>推荐使用 <span class="label label-success">1.20.1 及以上最新版本</span>，并基于 <span class="label label-info">Fabric</span> 架构构建游戏环境。生电是一个不断进阶的过程，新版本往往会带来更具挑战性的新机制。</p><h4 id="🛠️-极客辅助模组推荐（生电必备工具箱）"><a href="#🛠️-极客辅助模组推荐（生电必备工具箱）" class="headerlink" title="🛠️ 极客辅助模组推荐（生电必备工具箱）"></a>🛠️ 极客辅助模组推荐（生电必备工具箱）</h4><div class="note note-info">            <p><strong>💡 实用辅助类：</strong></p> <ul> <li><strong>Tweakeroo</strong>：功能极其强大，包含无限夜视、灵魂出窍、精准放置、柔和断开连接等。</li> <li><strong>Litematic (投影模组)</strong>：生电灵魂！将建筑蓝图直接以 3D 虚影形式显示在屏幕上，照着摆放即可。</li> <li><strong>MiniHUD</strong>：在屏幕上实时查看坐标、TPS、方向、甚至刷怪球体范围。</li> <li><strong>Jade &#x2F; WTHIT</strong>：光标指向方块时，实时显示其具体名称、属于哪个模组及详细状态。</li> <li><strong>鼠标手势</strong>：极大地优化一键整理、快速拖动背包物品的体验。</li> </ul> <p><strong>⚡ 底层优化类（防卡顿神器）：</strong></p> <ul> <li><strong>Sodium (钠)</strong> + <strong>Lithium (锂)</strong>：优化客户端渲染与服务器 TPS，为中后期庞大的红石自动化机器保驾护航。</li> </ul>           </div><p>👉 我已经将上述所有模组打造成了一个开箱即用的<strong>自用生电环境整合包</strong>：<a href="https://wwbfh.lanzoul.com/iyQWO3skp8vg">点击此处蓝奏云下载</a>。下载后无需解压，直接将压缩包拖入 PCL 启动器页面即可自动完成安装！</p><h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>工欲善其事，必先利其器。有了这套包含投影、优化和信息显示的模组包，你的客户端现在已经是一台性能拉满的“生电工作站”了。</p><p>生电从来不是一个人的孤岛，它不仅需要硬核的理论，更需要灵感的碰撞。很多顶级的红石机器，都是玩家们在服务器里日复一日交流出来的。</p><p>也推荐各位萌新加入到多人服务器中一起游玩</p><p><strong>👇 聊聊你的想法</strong><br>这套整合包你用着还顺手吗？或者你最希望在下一期教程中看到哪种自动化机器的建造指南（比如全自动刷铁机、树场还是村民交易所）？</p><div class="note note-success">            <p>如果你在安装整合包或配置模组时遇到了任何崩溃或报错，欢迎在下方评论区留言，我会尽力帮你解答。</p>           </div><div align="center" style="color: #888; font-size: 0.9em; margin-bottom: 20px;">  <span id="busuanzi_container_page_pv">    👀 本文阅读量：<span id="busuanzi_value_page_pv" style="color: #333; font-weight: bold;">拉取中...</span> 次  </span></div>]]></content>
+    
+    
+    <categories>
+      
+      <category>我的世界</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>游戏</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>我的世界联机教程</title>
     <link href="/2026/06/20/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E8%81%94%E6%9C%BA%E6%95%99%E7%A8%8B/"/>
     <url>/2026/06/20/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E8%81%94%E6%9C%BA%E6%95%99%E7%A8%8B/</url>
