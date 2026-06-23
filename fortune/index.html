@@ -19,11 +19,15 @@
   <meta name="author" content="Mythaicas">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="分类 - 我的世界">
-<meta property="og:url" content="https://mythaicas-king.github.io/categories/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/index.html">
+    <meta name="description" content="🔮 抽取今日运势                const btn &#x3D; document.getElementById(&#39;randomBtn&#39;);   const textDisplay &#x3D; document.getElementById(&#39;randomText&#39;);      const messages &#x3D; [     &quot;今日宜：下矿。必出钻石！💎&quot;,     &quot;今日">
+<meta property="og:type" content="website">
+<meta property="og:title" content="🎲 今日运势">
+<meta property="og:url" content="https://mythaicas-king.github.io/fortune/index.html">
 <meta property="og:site_name" content="念念不忘">
+<meta property="og:description" content="🔮 抽取今日运势                const btn &#x3D; document.getElementById(&#39;randomBtn&#39;);   const textDisplay &#x3D; document.getElementById(&#39;randomText&#39;);      const messages &#x3D; [     &quot;今日宜：下矿。必出钻石！💎&quot;,     &quot;今日">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-06-22T04:30:00.000Z">
+<meta property="article:modified_time" content="2026-06-22T07:37:33.903Z">
 <meta property="article:author" content="Mythaicas">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -31,7 +35,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>分类 - 我的世界 - 念念不忘</title>
+  <title>🎲 今日运势 - 念念不忘</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -356,13 +360,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/full.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="分类 - 我的世界"></span>
+            <span id="subtitle" data-typed-text="🎲 今日运势"></span>
           
         </div>
 
@@ -391,35 +395,86 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="list-group">
-  <p class="h4">共计 3 篇文章</p>
-  <hr>
+<article class="page-content">
+  <div style="text-align: center; margin: 40px 0; padding: 30px; background-color: #f8f9fa; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   
+  <button id="randomBtn" style="padding: 12px 30px; font-size: 18px; font-weight: bold; background-color: #2b2b2b; color: #fff; border: 2px solid #555; border-radius: 8px; cursor: pointer; transition: 0.2s;">
+    🔮 抽取今日运势
+  </button>
   
-    
-      
-      <p class="h5">2026</p>
-    
-    <a href="/2026/06/22/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E7%94%9F%E7%94%B5%E5%85%A5%E9%97%A8/" class="list-group-item list-group-item-action">
-      <time>06-22</time>
-      <div class="list-group-item-title">我的世界生电入门-环境篇</div>
-    </a>
-  
-    
-    <a href="/2026/06/20/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E8%81%94%E6%9C%BA%E6%95%99%E7%A8%8B/" class="list-group-item list-group-item-action">
-      <time>06-20</time>
-      <div class="list-group-item-title">我的世界联机教程</div>
-    </a>
-  
-    
-    <a href="/2026/06/18/minecraftdownload/" class="list-group-item list-group-item-action">
-      <time>06-18</time>
-      <div class="list-group-item-title">我的世界下载教程</div>
-    </a>
-  
+  <p id="randomText" style="margin-top: 30px; font-size: 20px; font-weight: bold; color: #d35400; min-height: 30px;"></p>
+
 </div>
 
+<script>
+  const btn = document.getElementById('randomBtn');
+  const textDisplay = document.getElementById('randomText');
+  
+  const messages = [
+    "今日宜：下矿。必出钻石！💎",
+    "今日忌：高空作业。可能会忘记带水桶...",
+    "今日宜：写代码。Bug 自动退散！💻",
+    "今日运势：红石灵感爆棚，快去建全自动农场！",
+    "今日警告：回头看看，苦力怕就在你身后 💥",
+    "今日宜：折腾服务器。端口转发一次成功！",
+    "今日运势：宜摸鱼。别卷了，去村庄里挂会儿机吧。"
+  ];
 
+  // 获取今天的日期字符串 (例如: "2026-6-22")
+  const getTodayString = () => {
+    const today = new Date();
+    return today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+  };
+
+  const todayStr = getTodayString();
+  
+  // 页面加载时，检查是否今天已经抽过了
+  const savedDate = localStorage.getItem('fortuneDate');
+  const savedResult = localStorage.getItem('fortuneResult');
+
+  // 如果存的日期就是今天，直接显示结果并禁用按钮
+  if (savedDate === todayStr && savedResult) {
+    textDisplay.innerText = savedResult;
+    disableButton();
+  }
+
+  // 按钮点击事件
+  btn.addEventListener('click', () => {
+    // 防御性拦截：如果按钮已经被禁用了，就不执行后面的代码
+    if (btn.disabled) return;
+
+    // 抽取结果
+    const randomIndex = Math.floor(Math.random() * messages.length);
+    const finalResult = messages[randomIndex];
+    
+    // 显示结果
+    textDisplay.innerText = finalResult;
+    
+    // 将今天的日期和抽取结果保存到浏览器本地
+    localStorage.setItem('fortuneDate', todayStr);
+    localStorage.setItem('fortuneResult', finalResult);
+    
+    // 禁用按钮
+    disableButton();
+    
+    // 点击动画
+    btn.style.transform = "scale(0.95)";
+    setTimeout(() => { btn.style.transform = "scale(1)"; }, 150);
+  });
+
+  // 封装一个禁用按钮的函数，方便调用
+  function disableButton() {
+    btn.innerText = "⏳ 运势已锁定，明天再来";
+    btn.style.backgroundColor = "#7f8c8d"; // 变成灰色
+    btn.style.borderColor = "#7f8c8d";
+    btn.style.cursor = "not-allowed"; // 鼠标变成禁止符号
+    btn.disabled = true;
+  }
+</script>
+
+  
+
+</article>
 
 
 
