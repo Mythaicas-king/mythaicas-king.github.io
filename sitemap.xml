@@ -133,27 +133,6 @@
   </url>
   
   <url>
-    <loc>https://mythaicas-king.github.io/tags/%E6%A2%AF%E5%AD%90/</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://mythaicas-king.github.io/tags/%E6%9C%BA%E5%9C%BA/</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://mythaicas-king.github.io/tags/vpn/</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://mythaicas-king.github.io/tags/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -169,6 +148,27 @@
   
   <url>
     <loc>https://mythaicas-king.github.io/tags/%E6%95%B0%E6%8D%AE%E5%8C%85/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mythaicas-king.github.io/tags/%E6%A2%AF%E5%AD%90/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mythaicas-king.github.io/tags/%E6%9C%BA%E5%9C%BA/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mythaicas-king.github.io/tags/vpn/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -191,14 +191,14 @@
   </url>
   
   <url>
-    <loc>https://mythaicas-king.github.io/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/</loc>
+    <loc>https://mythaicas-king.github.io/categories/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://mythaicas-king.github.io/categories/%E9%9A%8F%E7%AC%94/</loc>
+    <loc>https://mythaicas-king.github.io/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
